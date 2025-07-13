@@ -1,0 +1,134 @@
+#nav {
+    background-color: #003366;
+    box-shadow: 3px 3px 5px #004080;
+    z-index: 1000;
+}
+
+#brand {
+    color: white;
+    text-shadow: 2px 2px 3px #66ccff;
+    font-size: 22px;
+}
+/* Navbar hover underline effect */
+#nav .nav-link {
+  position: relative;
+
+}
+
+#nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 2px;
+  background-color: #66ccff; /* underline color */
+}
+
+#nav .nav-link:hover::after {
+  width: 100%;
+}
+
+
+
+/* About Section */
+.about-section {
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    padding: 60px 30px;
+    border-radius: 12px;
+    margin: 30px auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 1200px;
+}
+
+.about-section h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2C3E50;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.about-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Team Section */
+#tm {
+    margin-top: 60px;
+    font-family: 'Georgia', serif;
+    color: #2980b9;
+    font-size: 22px;
+}
+
+.team-heading {
+    color: #2C3E50;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.developer-card {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.developer-card:hover {
+    transform: translateY(-5px);
+}
+
+.developer-card img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.developer-card img:hover {
+    transform: scale(1.05);
+}
+
+.developer-card h3 {
+    color: #2C3E50;
+    margin: 10px 0 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.developer-card p {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
+#footer {
+  background-color: #212529 !important;
+  color: white !important;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+#footer h3, #footer h5 {
+  text-shadow: 2px 2px 2px #66ccff;
+}
+#footer .contact-section p,
+#footer .address-section p {
+  line-height: 1.2;
+  margin-bottom: 6px;
+}

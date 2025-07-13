@@ -1,0 +1,94 @@
+#nav {
+    background-color: #003366;
+    box-shadow: 3px 3px 5px #004080;
+    z-index: 1000;
+}
+
+#brand {
+    color: white;
+    text-shadow: 2px 2px 3px #66ccff;
+    font-size: 22px;
+}
+/* Navbar hover underline effect */
+#nav .nav-link {
+  position: relative;
+
+}
+
+#nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 2px;
+  background-color: #66ccff; /* underline color */
+}
+
+#nav .nav-link:hover::after {
+  width: 100%;
+}
+
+
+
+/* Extend existing layout */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#page-content {
+  flex-grow: 1;
+}
+
+/* Hero Section */
+#hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px black;
+}
+
+.hero-text p {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+#features h4 {
+  color: #003366;
+  font-weight: bold;
+}
+
+#features p {
+  color: #333;
+}
+
+#footer {
+  background-color: #212529 !important;
+  color: white !important;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+#footer h3, #footer h5 {
+  text-shadow: 2px 2px 2px #66ccff;
+}
+#footer .contact-section p,
+#footer .address-section p {
+  line-height: 1.2;
+  margin-bottom: 6px;
+}

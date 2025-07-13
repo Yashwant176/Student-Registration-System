@@ -1,0 +1,111 @@
+{% load static %}
+
+<html>
+<head>
+  <title>Student Management</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="container-fluid p-0">
+
+<!-- Navbar -->
+<ul class="nav bg-dark text-light shadow-sm sticky-top px-3" id="nav">
+  <li class="nav-item">
+    <a class="nav-link text-white fw-bold" href="#" id="brand">Silverleaf Academy</a>
+  </li>
+  <div class="d-flex ms-auto me-4">
+    <li class="nav-item">
+      <a class="nav-link text-white" href="{% url 'home:home' %}">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="{% url 'students:student_list' %}">Details</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="{% url 'about:about' %}">About</a>
+    </li>
+  </div>
+</ul>
+
+  <!-- Page Content -->
+  <div id="page-content" class="flex-grow-1">
+
+    <!-- Hero Section -->
+    <section id="hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{% static 'hero.jpg' %}') center/cover no-repeat;">
+      <div class="hero-text text-center">
+        <h1>Welcome to</h1>
+        <h1><strong>Silverleaf Academy</strong></h1>
+        <p class="lead">Your all-in-one student management portal</p>
+        <a href="{% url 'students:student_list' %}" class="btn btn-outline-light btn-lg mt-3">View Students</a>
+      </div>
+    </section>
+
+    <!-- Marquee Section -->
+    <div class="bg-warning text-dark py-2">
+      <marquee behavior="scroll" direction="left" scrollamount="6" class="fw-bold">
+        📢 Admissions Open for 2025 · Enroll Now · Limited Seats Available · Contact Us for More Info!
+      </marquee>
+    </div>
+
+    <!-- Features Section -->
+    <section class="container my-5" id="features">
+      <div class="text-center mb-4">
+        <h2 class="text-dark fw-bold">Our Key Features</h2>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <img src="{% static 'f1.jpeg' %}" class="img-fluid mb-3 rounded" alt="Manage Students" style="height:150px; width:150px;">
+          <h4>Manage Students</h4>
+          <p>Easily add, edit, and delete student records in one place.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="{% static 'f2.jpeg' %}" class="img-fluid mb-3 rounded" alt="Attendance" style="height:150px; width:150px;">
+          <h4>Track Attendance</h4>
+          <p>Monitor daily attendance and generate reports with ease.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="{% static 'f3.jpeg' %}" class="img-fluid mb-3 rounded" alt="Fees" style="height:150px; width:150px;">
+          <h4>Fee Management</h4>
+          <p>Record fee payments, outstanding balances, and generate invoices.</p>
+        </div>
+      </div>
+    </section>
+
+  </div> <!-- End page-content -->
+
+  <!-- Footer -->
+  <hr />
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <!-- Left Section -->
+        <div class="col-md-5">
+          <h3 class="fw-bold">Silverleaf Academy</h3>
+          <p>Empowering students with efficient data management and seamless<br> academic tracking.
+          Our platform ensures transparency, accessibility,<br> and real-time updates for academic performance, attendance, <br>and more.</p>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="col-md-4 contact-section">
+          <h5>CONTACT US</h5>
+          <p><strong>Phone:</strong> +91-9856578546</p>
+          <p><strong>Email:</strong> info@silverleaf.com</p>
+          <p><strong>Support:</strong> support@silverleaf.com</p>
+          <p><strong>Hours:</strong> Mon–Fri, 9am–6pm</p>
+        </div>
+
+        <!-- Address Section -->
+        <div class="col-md-3 address-section">
+          <h5>ADDRESS</h5>
+          <p>Silverleaf Academy,</p>
+          <p>123 Vani Vihar Road,</p>
+          <p>Sm City, ED 45678,</p>
+          <p>Odisha, India</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
